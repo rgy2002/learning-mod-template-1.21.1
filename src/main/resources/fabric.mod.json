@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lrn",
+	"version": "${version}",
+	"name": "Learning",
+	"description": "Primul mod in minecraft 1.21.X, o sa fie foarte cluttered",
+	"authors": [
+		"Spanul rgy"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/lrn/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rgy.lrn.Learning"
+		],
+		"fabric-datagen": [
+			"net.rgy.lrn.LearningDataGenerator"
+		],
+		"client": [
+			"net.rgy.lrn.LearningClient"
+		]
+	},
+	"mixins": [
+		"lrn.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
