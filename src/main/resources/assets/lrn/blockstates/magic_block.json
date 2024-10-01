@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lrn:block/magic_block"
+    }
+  }
+}

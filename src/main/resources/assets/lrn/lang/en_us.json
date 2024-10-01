@@ -1,0 +1,21 @@
+{
+  "item.lrn.pink_garnet": "Pink Garnet",
+  "item.lrn.raw_pink_garnet": "Raw Pink Garnet",
+  "item.lrn.chisel": "Chisel",
+  "item.lrn.cauliflower": "Cauliflower",
+  "item.lrn.starlight_ashes": "Starlight Ashes",
+
+
+  "tooltip.lrn.magic_block": "This is a Magic Block",
+  "tooltip.lrn.chisel_shift": "Chisels blocks",
+  "tooltip.lrn.chisel":"Press Shift For More Info",
+  "tooltip.lrn.cauliflower": "A Flower",
+
+  "block.lrn.pink_garnet_block": "Pink Garnet Block",
+  "block.lrn.magic_block": "Magic Block",
+  "block.lrn.raw_pink_garnet_block": "Raw Pink Garnet Block",
+  "block.lrn.pink_garnet_ore": "Pink Garnet Ore",
+  "block.lrn.pink_garnet_deepslate_ore": "Raw Pink Garnet Deepslate Ore",
+
+  "itemgroup.lrn.learning": "Learning Item Group"
+}
