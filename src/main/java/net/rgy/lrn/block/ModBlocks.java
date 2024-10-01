@@ -36,7 +36,7 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .hardness(6.2f)));
-    public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore",
+    public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("deepslate_pink_garnet_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2,5),AbstractBlock.Settings.create()
                     .strength(5f)
                     .requiresTool()

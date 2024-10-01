@@ -15,7 +15,7 @@
   "block.lrn.magic_block": "Magic Block",
   "block.lrn.raw_pink_garnet_block": "Raw Pink Garnet Block",
   "block.lrn.pink_garnet_ore": "Pink Garnet Ore",
-  "block.lrn.pink_garnet_deepslate_ore": "Raw Pink Garnet Deepslate Ore",
+  "block.lrn.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
 
   "itemgroup.lrn.learning": "Learning Item Group"
 }
