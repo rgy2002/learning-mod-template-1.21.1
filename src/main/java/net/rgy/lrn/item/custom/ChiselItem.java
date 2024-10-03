@@ -17,6 +17,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import net.rgy.lrn.block.ModBlocks;
+import net.rgy.lrn.component.ModDataComponentTypes;
 
 import java.util.List;
 import java.util.Map;
@@ -44,6 +45,8 @@ public class ChiselItem extends Item {
                 context.getStack().damage(1,(ServerWorld)world,((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
                 world.playSound(null,context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+
+                context.getStack().set(ModDataComponentTypes.COORDINATES,context.getBlockPos());
             }
         }
 
@@ -59,5 +62,9 @@ public class ChiselItem extends Item {
             tooltip.add(Text.translatable("tooltip.lrn.chisel"));
         }
         super.appendTooltip(stack, context, tooltip, type);
+
+        if(stack.get(ModDataComponentTypes.COORDINATES) !=  null){
+            tooltip.add(Text.literal("Last Block Changed at " + stack.get(ModDataComponentTypes.COORDINATES)));
+        }
     }
 }

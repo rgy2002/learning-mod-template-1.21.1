@@ -87,14 +87,58 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.PINK_GARNET_FENCE_GATE,1)
-                .pattern("RZR")
-                .pattern("RZR")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PINK_GARNET_SWORD,1)
+                .pattern(" Z ")
+                .pattern(" Z ")
+                .pattern(" R ")
                 .input('Z', ModItems.PINK_GARNET)
                 .input('R', Items.IRON_INGOT)
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PINK_GARNET_PICKAXE,1)
+                .pattern("ZZZ")
+                .pattern(" R ")
+                .pattern(" R ")
+                .input('Z', ModItems.PINK_GARNET)
+                .input('R', Items.IRON_INGOT)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PINK_GARNET_AXE,1)
+                .pattern("ZZ ")
+                .pattern("ZR ")
+                .pattern(" R ")
+                .input('Z', ModItems.PINK_GARNET)
+                .input('R', Items.IRON_INGOT)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PINK_GARNET_SHOVEL,1)
+                .pattern(" Z ")
+                .pattern(" R ")
+                .pattern(" R ")
+                .input('Z', ModItems.PINK_GARNET)
+                .input('R', Items.IRON_INGOT)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PINK_GARNET_HOE,1)
+                .pattern("ZZ ")
+                .pattern(" R ")
+                .pattern(" R ")
+                .input('Z', ModItems.PINK_GARNET)
+                .input('R', Items.IRON_INGOT)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+
 
 
     }

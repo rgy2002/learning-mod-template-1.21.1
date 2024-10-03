@@ -16,8 +16,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.rgy.lrn.item.ModItemGroups;
-import net.rgy.lrn.item.ModItems;
 import net.rgy.lrn.util.ModTags;
 
 import java.util.List;

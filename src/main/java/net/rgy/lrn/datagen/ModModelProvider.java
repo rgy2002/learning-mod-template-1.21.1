@@ -45,5 +45,11 @@ public class ModModelProvider extends FabricModelProvider {
        img.register(ModItems.CAULIFLOWER, Models.GENERATED);
        img.register(ModItems.RAW_PINK_GARNET, Models.GENERATED);
        img.register(ModItems.PINK_GARNET, Models.GENERATED);
+
+       img.register(ModItems.PINK_GARNET_SWORD,Models.HANDHELD);
+       img.register(ModItems.PINK_GARNET_PICKAXE,Models.HANDHELD);
+       img.register(ModItems.PINK_GARNET_AXE,Models.HANDHELD);
+       img.register(ModItems.PINK_GARNET_SHOVEL,Models.HANDHELD);
+       img.register(ModItems.PINK_GARNET_HOE,Models.HANDHELD);
     }
 }
