@@ -19,6 +19,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         //! ITEMS
                         entries.add(ModItems.RAW_PINK_GARNET);
+                        entries.add(ModItems.PINK_GARNET_INGOT);
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.CHISEL);
                         entries.add(ModItems.CAULIFLOWER);
@@ -28,6 +29,11 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_SHOVEL);
                         entries.add(ModItems.PINK_GARNET_HOE);
                         entries.add(ModItems.PINK_GARNET_SWORD);
+                        entries.add(ModItems.PINK_GARNET_HAMMER);
+                        entries.add(ModItems.PINK_GARNET_HELMET);
+                        entries.add(ModItems.PINK_GARNET_CHESTPLATE);
+                        entries.add(ModItems.PINK_GARNET_LEGGINGS);
+                        entries.add(ModItems.PINK_GARNET_BOOTS);
 
                         //! BLOCKS
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);

@@ -3,6 +3,7 @@ package net.rgy.lrn.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.rgy.lrn.block.ModBlocks;
 import net.rgy.lrn.block.custom.PinkGarnetLampBlock;
@@ -41,15 +42,22 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator img) {
        img.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
+       img.register(ModItems.PINK_GARNET_INGOT, Models.GENERATED);
        img.register(ModItems.CHISEL, Models.GENERATED);
        img.register(ModItems.CAULIFLOWER, Models.GENERATED);
        img.register(ModItems.RAW_PINK_GARNET, Models.GENERATED);
        img.register(ModItems.PINK_GARNET, Models.GENERATED);
+
+       img.registerArmor(((ArmorItem) ModItems.PINK_GARNET_HELMET));
+       img.registerArmor(((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE));
+       img.registerArmor(((ArmorItem) ModItems.PINK_GARNET_LEGGINGS));
+       img.registerArmor(((ArmorItem) ModItems.PINK_GARNET_BOOTS));
 
        img.register(ModItems.PINK_GARNET_SWORD,Models.HANDHELD);
        img.register(ModItems.PINK_GARNET_PICKAXE,Models.HANDHELD);
        img.register(ModItems.PINK_GARNET_AXE,Models.HANDHELD);
        img.register(ModItems.PINK_GARNET_SHOVEL,Models.HANDHELD);
        img.register(ModItems.PINK_GARNET_HOE,Models.HANDHELD);
+       img.register(ModItems.PINK_GARNET_HAMMER,Models.HANDHELD);
     }
 }

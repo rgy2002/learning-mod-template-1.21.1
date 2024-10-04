@@ -9,6 +9,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.rgy.lrn.Learning;
 import net.rgy.lrn.item.custom.ChiselItem;
+import net.rgy.lrn.item.custom.HammerItem;
+import net.rgy.lrn.item.custom.ModArmorItem;
 
 import java.util.List;
 
@@ -29,25 +31,47 @@ public class ModItems {
 
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
 
+    public static final Item PINK_GARNET_INGOT = registerItem("pink_garnet_ingot", new Item(new Item.Settings()));
+
+    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
+            new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,7,-3.8f)).fireproof()));
+
     public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",
             new SwordItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,3,-2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,3,-2.4f)).fireproof()));
 
     public static final Item PINK_GARNET_PICKAXE = registerItem("pink_garnet_pickaxe",
             new PickaxeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,1,-2.8f))));
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,1,-2.8f)).fireproof()));
 
     public static final Item PINK_GARNET_AXE = registerItem("pink_garnet_axe",
             new AxeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
-                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,1.f,-3.0f))));
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,6,-3.0f)).fireproof()));
 
     public static final Item PINK_GARNET_SHOVEL = registerItem("pink_garnet_shovel",
             new ShovelItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,6,-3.2f))));
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,1,-3.2f)).fireproof()));
 
     public static final Item PINK_GARNET_HOE = registerItem("pink_garnet_hoe",
             new HoeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,0,-3.0f))));
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,0,-3.0f)).fireproof()));
+
+    public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40)).fireproof()));
+
+    public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40)).fireproof()));
+
+    public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40)).fireproof()));
+
+    public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40)).fireproof()));
 
 
     private static Item registerItem(String name, Item item){

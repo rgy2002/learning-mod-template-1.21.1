@@ -11,7 +11,7 @@ import net.rgy.lrn.util.ModTags;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    PINK_GARNET(ModTags.Blocks.INCORRECT_FOR_PINK_GARNET_TOOL, 3041, 10.0F, 5.0F, 25, () -> Ingredient.ofItems(ModItems.PINK_GARNET));
+    PINK_GARNET(ModTags.Blocks.INCORRECT_FOR_PINK_GARNET_TOOL, 3041, 10.0F, 5.0F, 30, () -> Ingredient.ofItems(ModItems.PINK_GARNET_INGOT));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

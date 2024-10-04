@@ -1,5 +1,6 @@
 {
   "item.lrn.pink_garnet": "Pink Garnet",
+  "item.lrn.pink_garnet_ingot": "Pink Garnet Ingot",
   "item.lrn.raw_pink_garnet": "Raw Pink Garnet",
   "item.lrn.chisel": "Chisel",
   "item.lrn.cauliflower": "Cauliflower",
@@ -9,6 +10,11 @@
   "item.lrn.pink_garnet_axe": "Pink Garnet Axe",
   "item.lrn.pink_garnet_shovel": "Pink Garnet Shovel",
   "item.lrn.pink_garnet_hoe": "Pink Garnet Hoe",
+  "item.lrn.pink_garnet_hammer": "Pink Garnet Hammer",
+  "item.lrn.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.lrn.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.lrn.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.lrn.pink_garnet_boots": "Pink Garnet Boots",
 
 
   "tooltip.lrn.magic_block": "This is a Magic Block",

@@ -32,6 +32,7 @@ public class MagicBlock extends Block {
         return ActionResult.SUCCESS;
     }
 
+
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity){

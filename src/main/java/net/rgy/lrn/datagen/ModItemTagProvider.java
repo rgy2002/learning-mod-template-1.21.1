@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
+import net.rgy.lrn.block.ModBlocks;
 import net.rgy.lrn.item.ModItems;
 import net.rgy.lrn.util.ModTags;
 
@@ -36,5 +37,31 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_SHOVEL);
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.PINK_GARNET_HOE);
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.PINK_GARNET_HELMET)
+                .add(ModItems.PINK_GARNET_CHESTPLATE)
+                .add(ModItems.PINK_GARNET_LEGGINGS)
+                .add(ModItems.PINK_GARNET_BOOTS);
+        getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.PINK_GARNET_HELMET)
+                .add(ModItems.PINK_GARNET_CHESTPLATE)
+                .add(ModItems.PINK_GARNET_LEGGINGS)
+                .add(ModItems.PINK_GARNET_BOOTS);
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModItems.PINK_GARNET_CHESTPLATE);
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(ModItems.PINK_GARNET_HELMET);
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(ModItems.PINK_GARNET_LEGGINGS);
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(ModItems.PINK_GARNET_BOOTS);
+        getOrCreateTagBuilder(ItemTags.FREEZE_IMMUNE_WEARABLES)
+                .add(ModItems.PINK_GARNET_HELMET)
+                .add(ModItems.PINK_GARNET_CHESTPLATE)
+                .add(ModItems.PINK_GARNET_LEGGINGS)
+                .add(ModItems.PINK_GARNET_BOOTS);
+        getOrCreateTagBuilder(ItemTags.FIRE_ASPECT_ENCHANTABLE)
+                .add(ModItems.PINK_GARNET_AXE);
+
     }
 }

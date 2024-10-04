@@ -48,6 +48,7 @@ public class ModBlocks {
             new MagicBlock(AbstractBlock.Settings.create()
                     .strength(1f)
                     .sounds(BlockSoundGroup.DEEPSLATE)
+                    .requiresTool()
                     .hardness(7.2f)));
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
